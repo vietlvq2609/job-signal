@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext", // Crucial for ESM
+    "lib": ["ESNext", "DOM"],       // DOM is needed for Playwright's page.evaluate
+    "types": ["node"],              // Explicitly tells TS to look for node types
+    "esModuleInterop": true,        // The bridge for 'import fs from "fs"'
+    "skipLibCheck": true,           // Speeds up your IDE by ignoring library internals
+    "strict": true,
+    "rootDir": "src",
+  },
+  "include": ["src/**/*"]
+}
